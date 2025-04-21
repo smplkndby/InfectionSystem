@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddOtchet.aspx" />
+    <Content Include="DeleteOtchet.aspx" />
     <Content Include="EditOtchet.aspx" />
     <Content Include="Global.asax" />
     <Content Include="OtchetyClassic.aspx" />
@@ -80,6 +81,13 @@
     </Compile>
     <Compile Include="AddOtchet.aspx.designer.cs">
       <DependentUpon>AddOtchet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOtchet.aspx.cs">
+      <DependentUpon>DeleteOtchet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteOtchet.aspx.designer.cs">
+      <DependentUpon>DeleteOtchet.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditOtchet.aspx.cs">
       <DependentUpon>EditOtchet.aspx</DependentUpon>
