@@ -67,11 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddOtchet.aspx" />
     <Content Include="Global.asax" />
     <Content Include="OtchetyClassic.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOtchet.aspx.cs">
+      <DependentUpon>AddOtchet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddOtchet.aspx.designer.cs">
+      <DependentUpon>AddOtchet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
