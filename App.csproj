@@ -159,4 +159,16 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+	<ItemGroup>
+		<RoslynCompilerFiles Include="$(SolutionDir)\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\**\*" />
+	</ItemGroup>
+
+	<Target Name="CopyRoslynCompilerFiles" AfterTargets="Build">
+		<MakeDir Directories="$(OutputPath)roslyn" />
+		<Copy
+		  SourceFiles="@(RoslynCompilerFiles)"
+		  DestinationFiles="@(RoslynCompilerFiles->'$(OutputPath)roslyn\%(RecursiveDir)%(Filename)%(Extension)')"
+		  SkipUnchangedFiles="true" />
+	</Target>
+
 </Project>
